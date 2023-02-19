@@ -93,7 +93,7 @@ File(s): `3-quick_sort.c` `3-O`
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 3-main.c 3-quick_sort.c print_array.c -o quick`
 
 ## Advanced Tasks
-### ✅ **4. Shell sort - Knuth Sequence**
+### ☑️ **4. Shell sort - Knuth Sequence**
 Write a function that sorts an array of integers in ascending order using the Shell sort algorithm, using the Knuth sequence
 
 * Prototype: `void shell_sort(int *array, size_t size);`
@@ -107,7 +107,7 @@ No big O notations of the time complexity of the Shell sort (Knuth sequence) alg
 File(s): `100-shell_sort.c`                                                                                                                                             
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 100-main.c 100-shell_sort.c print_array.c -o shell`
 
-### ✅ **5. Cocktail shaker sort**
+### ☑️ **5. Cocktail shaker sort**
 Write a function that sorts a doubly linked list of integers in ascending order using the Cocktail shaker sort algorithm
 
 * Prototype: `void cocktail_sort_list(listint_t **list);`
@@ -123,7 +123,7 @@ Write in the file `101-O`, the big O notations of the time complexity of the Coc
 File(s): `101-cocktail_sort_list.c` `101-O`                                                                                                                             
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 101-main.c 101-cocktail_sort_list.c print_list.c -o cocktail`
 
-### ✅ **6. Counting sort**
+### ☑️ **6. Counting sort**
 Write a function that sorts an array of integers in ascending order using the Counting sort algorithm
 
 * Prototype: `void counting_sort(int *array, size_t size);`
@@ -141,13 +141,13 @@ Write in the file 102-O, the big O notations of the time complexity of the Count
 File(s): `102-counting_sort.c` `102-O`                                                                                                                               
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 102-main.c 102-counting_sort.c print_array.c -o counting`
 
-### ✅ **7. Merge sort**
+### ☑️ **7. Merge sort**
 Write a function that sorts an array of integers in ascending order using the Merge sort algorithm
 
 * Prototype: `void merge_sort(int *array, size_t size);`
 * You must implement the top-down merge sort algorithm
-* When you divide an array into two sub-arrays, the size of the left array should always be <= the size of the right array. i.e. `{1, 2, 3, 4, 5}` -> `{1, 2}, {3, 4, 5}`
-* Sort the left array before the right array
+    - When you divide an array into two sub-arrays, the size of the left array should always be <= the size of the right array. i.e. `{1, 2, 3, 4, 5}` -> `{1, 2}, {3, 4, 5}`
+    - Sort the left array before the right array
 * You are allowed to use `printf`
 * You are allowed to use `malloc` and `free` only once (only one call)
 
@@ -160,7 +160,7 @@ Write in the file `103-O`, the big O notations of the time complexity of the Mer
 File(s): `103-merge_sort.c` `103-O`                                                                                                                                     
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 103-main.c 103-merge_sort.c print_array.c -o merge`
 
-### ✅ **8. Heap sort**
+### ☑️ **8. Heap sort**
 Write a function that sorts an array of integers in ascending order using the Heap sort algorithm
 
 * Prototype: `void heap_sort(int *array, size_t size);`
@@ -176,7 +176,7 @@ Write in the file `104-O`, the big O notations of the time complexity of the Hea
 File(s): `104-heap_sort.c` `104-O`                                                                                                                                     
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 104-main.c 104-heap_sort.c print_array.c -o heap`
 
-### ✅ **9. Radix sort**
+### ☑️ **9. Radix sort**
 Write a function that sorts an array of integers in ascending order using the Radix sort algorithm
 
 * Prototype: `void radix_sort(int *array, size_t size);`
@@ -188,7 +188,7 @@ Write a function that sorts an array of integers in ascending order using the Ra
 File(s): `105-radix_sort.c`                                                                                                                                             
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 105-main.c 105-radix_sort.c print_array.c -o radix`
 
-### ✅ **10. Bitonic sort**
+### ☑️ **10. Bitonic sort**
 Write a function that sorts an array of integers in ascending order using the Bitonic sort algorithm
 
 * Prototype: `void bitonic_sort(int *array, size_t size);`
@@ -205,7 +205,7 @@ Write in the file `106-O`, the big O notations of the time complexity of the Bit
 File(s): `106-bitonic_sort.c` `106-O`                                                                                                                                 
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 106-main.c 106-bitonic_sort.c print_array.c -o bitonic`
 
-### ✅ **11. Quick Sort - Hoare Partition scheme**
+### ☑️ **11. Quick Sort - Hoare Partition scheme**
 Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
 
 * Prototype: `void quick_sort_hoare(int *array, size_t size);`
@@ -222,7 +222,7 @@ Write in the file `107-O`, the big O notations of the time complexity of the Qui
 File(s): `107-quick_sort_hoare.c` `107-O`                                                                                                                               
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 107-main.c 107-quick_sort_hoare.c print_array.c -o quick`
 
-### ✅ **12. Dealer**
+### ☑️ **12. Dealer**
 Write a function that sorts a deck of cards.
 
 * Prototype: void sort_deck(deck_node_t **deck);
@@ -230,13 +230,13 @@ Write a function that sorts a deck of cards.
 * You have to push your deck.h header file
 * Each node of the doubly linked list contains a card that you cannot modify. You have to swap the nodes.
 * You can assume there is exactly 52 elements in the doubly linked list.
-* You are free to use the sorting algorithm of your choice
-* The deck must be ordered:
+    - You are free to use the sorting algorithm of your choice
+    - The deck must be ordered:
 
 From Ace to King
 From Spades to Diamonds
 
-File(s): `1000-sort_deck.c` `deck.h`
+File(s): `1000-sort_deck.c` `deck.h`                                                                                                                                   
 Compiled: `gcc -Wall -Wextra -Werror -pedantic 1000-main.c 1000-sort_deck.c -o deck`
 
 ## Author: 
