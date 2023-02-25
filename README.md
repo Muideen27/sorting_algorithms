@@ -241,3 +241,4 @@ Compiled: `gcc -Wall -Wextra -Werror -pedantic 1000-main.c 1000-sort_deck.c -o d
 
 ## Author: 
 #### Ilori Muideen Adeleye
+#### Oluwaseun Taiwo
